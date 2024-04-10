@@ -1,0 +1,30 @@
+body {
+    background-color: black;
+    font-family: Yeseva One;
+}
+
+h1 {
+    color : white;
+}
+
+p {
+    color : white;
+}
+
+h2 {
+    color : green;
+}
+
+div.boutons {
+    text-align: center;
+    color : white;
+    background-color: black;
+}
+
+table {
+    margin : auto;
+}
+
+td {
+    text-align: center;
+}

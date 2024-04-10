@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulaire de contact</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <form action="#" method="POST" class="contact-form">
+        <div class="form-group">
+            <label for="pseudo">Pseudo <span class="required">*</span></label>
+            <input type="text" id="pseudo" name="pseudo" required>
+        </div>
+        <div class="form-group">
+            <label for="mot_de_passe">Mot de passe <span class="required">*</span></label>
+            <input type="password" id="mot_de_passe" name="mot_de_passe" required>
+        </div>
+        <div class="form-group">
+            <label for="email">Email <span class="required">*</span></label>
+            <input type="email" id="email" name="email" required>
+        </div>
+        <div class="form-group">
+            <label for="objet">Objet du message <span class="required">*</span></label>
+            <select id="objet" name="objet" required>
+                <option value="" disabled selected>Choisissez un objet</option>
+                <option value="question">J'ai une question</option>
+                <option value="suggestion">Je fais une suggestion</option>
+                <option value="probleme">Je rencontre un problème</option>
+                <option value="autre">Autre</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="message">Votre message <span class="required">*</span></label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+        </div>
+        <div class="form-group">
+            <fieldset>
+                <legend>Niveau d'urgence</legend>
+                <input type="radio" id="urgence_lent" name="urgence" value="lent" checked>
+                <label for="urgence_lent">Lent</label>
+                <input type="radio" id="urgence_moyen" name="urgence" value="moyen">
+                <label for="urgence_moyen">Moyen</label>
+                <input type="radio" id="urgence_urgent" name="urgence" value="urgent">
+                <label for="urgence_urgent">Urgent</label>
+            </fieldset>
+        </div>
+        <div class="form-group">
+            <input type="checkbox" id="confidentialite" name="confidentialite" required>
+            <label for="confidentialite">J'accepte la politique de confidentialité <span class="required">*</span></label>
+        </div>
+        <div class="form-group">
+            <button type="submit">Envoyer</button>
+        </div>
+    </form>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+.contact-form {
+    max-width: 500px;
+    margin: 50px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+.form-group textarea {
+    resize: none;
+}
+
+.form-group input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+.form-group .required {
+    color: #f00;
+}
+
+button[type="submit"] {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+button[type="submit"]:hover {
+    background-color: #0056b3;
+}
